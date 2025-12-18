@@ -1,0 +1,182 @@
+[
+    {
+      "id": 1,
+      "name": "Сочи",
+      "country": "Россия",
+      "climate": "moderate",
+      "budgetLevel": "medium",
+      "travelTypes": ["beach", "mountains", "city"],
+      "description": "Крупнейший курортный город России на черноморском побережье"
+    },
+    {
+      "id": 2,
+      "name": "Москва",
+      "country": "Россия",
+      "climate": "moderate",
+      "budgetLevel": "high",
+      "travelTypes": ["city", "culture"],
+      "description": "Столица России, культурный и исторический центр"
+    },
+    {
+      "id": 3,
+      "name": "Санкт-Петербург",
+      "country": "Россия",
+      "climate": "cold",
+      "budgetLevel": "high",
+      "travelTypes": ["city", "culture"],
+      "description": "Культурная столица с дворцами и музеями"
+    },
+    {
+      "id": 4,
+      "name": "Калининград",
+      "country": "Россия",
+      "climate": "moderate",
+      "budgetLevel": "medium",
+      "travelTypes": ["city", "culture", "beach"],
+      "description": "Европейский город России на берегу Балтийского моря"
+    },
+    {
+      "id": 5,
+      "name": "Казань",
+      "country": "Россия",
+      "climate": "moderate",
+      "budgetLevel": "medium",
+      "travelTypes": ["city", "culture"],
+      "description": "Столица Татарстана, город с уникальным смешением культур"
+    },
+    {
+      "id": 6,
+      "name": "Краснодар",
+      "country": "Россия",
+      "climate": "hot",
+      "budgetLevel": "medium",
+      "travelTypes": ["city", "culture"],
+      "description": "Столица Кубани, южный город с развитой инфраструктурой"
+    },
+    {
+      "id": 7,
+      "name": "Анапа",
+      "country": "Россия",
+      "climate": "hot",
+      "budgetLevel": "low",
+      "travelTypes": ["beach"],
+      "description": "Детский курорт на черноморском побережье"
+    },
+    {
+      "id": 8,
+      "name": "Геленджик",
+      "country": "Россия",
+      "climate": "hot",
+      "budgetLevel": "medium",
+      "travelTypes": ["beach", "mountains"],
+      "description": "Курортный город в бухте Черного моря"
+    },
+    {
+      "id": 9,
+      "name": "Екатеринбург",
+      "country": "Россия",
+      "climate": "cold",
+      "budgetLevel": "medium",
+      "travelTypes": ["city", "culture"],
+      "description": "Столица Урала, крупный промышленный и культурный центр"
+    },
+    {
+      "id": 10,
+      "name": "Владивосток",
+      "country": "Россия",
+      "climate": "moderate",
+      "budgetLevel": "high",
+      "travelTypes": ["city", "culture", "beach"],
+      "description": "Крупнейший порт Дальнего Востока на берегу Японского моря"
+    },
+    {
+      "id": 11,
+      "name": "Кисловодск",
+      "country": "Россия",
+      "climate": "moderate",
+      "budgetLevel": "medium",
+      "travelTypes": ["mountains", "culture"],
+      "description": "Бальнеологический курорт в предгорьях Кавказа"
+    },
+    {
+      "id": 12,
+      "name": "Суздаль",
+      "country": "Россия",
+      "climate": "cold",
+      "budgetLevel": "low",
+      "travelTypes": ["culture"],
+      "description": "Город-музей под открытым небом, входит в Золотое кольцо России"
+    },
+    {
+      "id": 13,
+      "name": "Байкал",
+      "country": "Россия",
+      "climate": "cold",
+      "budgetLevel": "medium",
+      "travelTypes": ["mountains", "nature"],
+      "description": "Самое глубокое озеро в мире, объект Всемирного наследия ЮНЕСКО"
+    },
+    {
+      "id": 14,
+      "name": "Алтай",
+      "country": "Россия",
+      "climate": "cold",
+      "budgetLevel": "medium",
+      "travelTypes": ["mountains", "nature"],
+      "description": "Горный регион с уникальной природой и чистым воздухом"
+    },
+    {
+      "id": 15,
+      "name": "Ростов-на-Дону",
+      "country": "Россия",
+      "climate": "hot",
+      "budgetLevel": "medium",
+      "travelTypes": ["city", "culture"],
+      "description": "Южная столица России, портовый город на Дону"
+    },
+    {
+      "id": 16,
+      "name": "Ялта",
+      "country": "Россия",
+      "climate": "hot",
+      "budgetLevel": "high",
+      "travelTypes": ["beach", "mountains", "culture"],
+      "description": "Курортная столица Крыма на черноморском побережье"
+    },
+    {
+      "id": 17,
+      "name": "Мурманск",
+      "country": "Россия",
+      "climate": "cold",
+      "budgetLevel": "low",
+      "travelTypes": ["city", "culture"],
+      "description": "Самый крупный город мира за полярным кругом"
+    },
+    {
+      "id": 18,
+      "name": "Волгоград",
+      "country": "Россия",
+      "climate": "hot",
+      "budgetLevel": "low",
+      "travelTypes": ["city", "culture"],
+      "description": "Город-герой на берегу Волги с историческим наследием"
+    },
+    {
+      "id": 19,
+      "name": "Нижний Новгород",
+      "country": "Россия",
+      "climate": "moderate",
+      "budgetLevel": "medium",
+      "travelTypes": ["city", "culture"],
+      "description": "Крупный город на слиянии Оки и Волги, исторический центр"
+    },
+    {
+      "id": 20,
+      "name": "Архыз",
+      "country": "Россия",
+      "climate": "cold",
+      "budgetLevel": "medium",
+      "travelTypes": ["mountains", "nature"],
+      "description": "Горнолыжный курорт в Карачаево-Черкесии"
+    }
+  ]
