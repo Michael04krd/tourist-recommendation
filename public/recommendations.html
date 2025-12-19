@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Рекомендации - TravelMind</title>
-    <!-- Tailwind CSS через CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <style>
@@ -98,7 +94,6 @@
             border-left-color: #667eea;
         }
         
-        /* Анимации */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -107,7 +102,6 @@
             animation: fadeIn 0.3s ease-out;
         }
         
-        /* Скроллбар */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -122,14 +116,12 @@
     </style>
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen">
-    <!-- Декоративные элементы -->
     <div class="fixed inset-0 overflow-hidden pointer-events-none">
         <div class="absolute top-20 left-10 w-72 h-72 bg-blue-100 opacity-30 rounded-full mix-blend-multiply filter blur-3xl"></div>
         <div class="absolute bottom-20 right-10 w-72 h-72 bg-purple-100 opacity-30 rounded-full mix-blend-multiply filter blur-3xl"></div>
     </div>
 
     <div class="container mx-auto px-4 py-8 max-w-6xl relative z-10">
-        <!-- Header -->
         <header class="text-center mb-8">
             <a href="index.html" class="inline-flex items-center space-x-3 mb-4 group">
                 <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center shadow group-hover:scale-110 transition-transform">
@@ -144,16 +136,13 @@
         </header>
 
         <div class="grid lg:grid-cols-4 gap-6 mb-8">
-            <!-- Статистика -->
             <div class="lg:col-span-1 space-y-6">
-                <!-- Профиль пользователя -->
                 <div class="bg-white rounded-2xl shadow-soft p-5">
                     <h3 class="font-semibold text-gray-800 mb-4 flex items-center space-x-2">
                         <i class="fas fa-user-circle text-blue-500"></i>
                         <span>Ваш профиль</span>
                     </h3>
                     <div id="profile-details" class="space-y-3 text-sm">
-                        <!-- Профиль загрузится через JS -->
                         <div class="text-center py-4">
                             <i class="fas fa-spinner fa-spin text-blue-500 text-lg"></i>
                             <p class="text-gray-500 mt-2">Загрузка...</p>
@@ -161,7 +150,6 @@
                     </div>
                 </div>
                 
-                <!-- Действия -->
                 <div class="bg-white rounded-2xl shadow-soft p-5">
                     <h3 class="font-semibold text-gray-800 mb-4">Действия</h3>
                     <div class="space-y-3">
@@ -177,9 +165,7 @@
                 </div>
             </div>
 
-            <!-- Основной контент -->
             <div class="lg:col-span-3">
-                <!-- Рекомендации -->
                 <div class="bg-white rounded-2xl shadow-soft overflow-hidden mb-6">
                     <div class="bg-gradient-to-r from-blue-500 to-purple-600 p-6 text-white">
                         <h2 class="text-xl font-bold flex items-center space-x-3">
@@ -191,7 +177,6 @@
                     
                     <div class="p-6">
                         <div id="recommendations-list" class="space-y-6">
-                            <!-- Загрузка -->
                             <div class="text-center py-12">
                                 <div class="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
                                 <p class="text-gray-600">Анализируем ваши предпочтения...</p>
@@ -200,7 +185,6 @@
                     </div>
                 </div>
                 
-                <!-- График -->
                 <div class="bg-white rounded-2xl shadow-soft p-6">
                     <h3 class="font-semibold text-gray-800 mb-4 flex items-center space-x-2">
                         <i class="fas fa-chart-bar text-blue-500"></i>
@@ -213,7 +197,6 @@
             </div>
         </div>
 
-        <!-- Навигация -->
         <div class="flex justify-center space-x-4 mb-8">
             <a href="index.html" class="px-6 py-3 bg-white rounded-xl shadow-soft text-gray-700 font-medium hover:shadow-md transition-all flex items-center space-x-2">
                 <i class="fas fa-robot"></i>
@@ -225,13 +208,11 @@
             </a>
         </div>
 
-        <!-- Footer -->
         <footer class="pt-6 border-t border-gray-200 text-center">
             <p class="text-gray-500 text-sm">TravelMind • Система рекомендаций • Лабораторная работа №8</p>
         </footer>
     </div>
 
-    <!-- Скрипты -->
     <script src="recommendations.js"></script>
     <script>
         // Функция очистки профиля
