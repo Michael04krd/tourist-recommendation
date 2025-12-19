@@ -1,4 +1,3 @@
-// Данные чат-бота
 const chatData = {
     questions: [
         {
