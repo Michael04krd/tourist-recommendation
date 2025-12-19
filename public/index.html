@@ -12,10 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
-        /* Кастомные стили */
         body { font-family: 'Inter', sans-serif; }
         
-        /* Градиентный текст */
         .text-gradient {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
@@ -23,12 +21,10 @@
             background-clip: text;
         }
         
-        /* Тень для карточек */
         .shadow-soft {
             box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.1);
         }
         
-        /* Анимация плавания */
         @keyframes float {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-10px); }
@@ -37,7 +33,6 @@
             animation: float 3s ease-in-out infinite;
         }
         
-        /* Кастомные классы для кнопок */
         .btn-primary {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -58,7 +53,6 @@
             transform: translateY(-2px);
         }
         
-        /* Пузыри для чата */
         .chat-bubble-bot {
             background: white;
             border: 1px solid #e5e7eb;
@@ -92,13 +86,11 @@
             transition: width 0.5s ease;
         }
         
-        /* Декоративные элементы */
         .blob {
             background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
             filter: blur(40px);
         }
         
-        /* Анимация появления */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -107,7 +99,6 @@
             animation: fadeIn 0.3s ease-out;
         }
         
-        /* Скроллбар */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -125,14 +116,12 @@
     </style>
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen">
-    <!-- Декоративные элементы -->
     <div class="fixed inset-0 overflow-hidden pointer-events-none">
         <div class="absolute top-20 left-10 w-72 h-72 blob rounded-full animate-float"></div>
         <div class="absolute bottom-20 right-10 w-72 h-72 blob rounded-full animate-float" style="animation-delay: 1.5s"></div>
     </div>
 
     <div class="container mx-auto px-4 py-8 max-w-6xl relative z-10">
-        <!-- Header -->
         <header class="text-center mb-12">
             <div class="inline-flex items-center space-x-3 mb-4">
                 <div class="w-12 h-12 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center shadow-lg">
@@ -149,10 +138,8 @@
         </header>
 
         <div class="grid lg:grid-cols-3 gap-8">
-            <!-- Основной чат -->
             <div class="lg:col-span-2">
                 <div class="bg-white rounded-2xl shadow-soft overflow-hidden hover:shadow-xl transition-all duration-500">
-                    <!-- Заголовок чата -->
                     <div class="bg-gradient-to-r from-blue-500 to-purple-600 p-6 text-white">
                         <div class="flex items-center justify-between">
                             <div>
@@ -171,10 +158,8 @@
                         </div>
                     </div>
 
-                    <!-- Тело чата -->
                     <div class="p-6 bg-gray-50">
                         <div id="chat-messages" class="space-y-6 mb-6 max-h-[400px] overflow-y-auto p-2">
-                            <!-- Приветственное сообщение -->
                             <div class="flex space-x-3 animate-fade-in">
                                 <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex-shrink-0 flex items-center justify-center text-white shadow">
                                     <i class="fas fa-robot"></i>
@@ -186,12 +171,9 @@
                             </div>
                         </div>
 
-                        <!-- Варианты ответов -->
                         <div id="chat-options" class="space-y-3">
-                            <!-- Кнопки будут добавляться через JS -->
                         </div>
 
-                        <!-- Индикатор загрузки -->
                         <div id="loading-indicator" class="hidden flex items-center justify-center space-x-3 py-8">
                             <div class="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
                             <span class="text-gray-600">Ищем лучшие варианты...</span>
@@ -199,7 +181,6 @@
                     </div>
                 </div>
 
-                <!-- Быстрые действия -->
                 <div class="grid grid-cols-2 gap-4 mt-6">
                     <a href="recommendations.html" 
                        class="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-2xl shadow-soft p-5 text-center group hover:shadow-lg transition-all duration-300">
@@ -221,9 +202,7 @@
                 </div>
             </div>
 
-            <!-- Боковая панель -->
             <div class="space-y-6">
-                <!-- Профиль -->
                 <div class="bg-white rounded-2xl shadow-soft p-6">
                     <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center space-x-2">
                         <i class="fas fa-user-circle text-blue-500"></i>
@@ -251,7 +230,6 @@
                     </div>
                 </div>
 
-                <!-- Как это работает -->
                 <div class="bg-white rounded-2xl shadow-soft p-6">
                     <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center space-x-2">
                         <i class="fas fa-info-circle text-blue-500"></i>
@@ -285,7 +263,6 @@
                     </ul>
                 </div>
 
-                <!-- Статистика -->
                 <div class="bg-white rounded-2xl shadow-soft p-6">
                     <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center space-x-2">
                         <i class="fas fa-chart-line text-blue-500"></i>
@@ -313,7 +290,6 @@
             </div>
         </div>
 
-        <!-- Footer -->
         <footer class="mt-12 pt-8 border-t border-gray-200 text-center">
             <p class="text-gray-500 text-sm mb-2">
                 Лабораторная работа №8 • Программная инженерия
@@ -324,7 +300,6 @@
         </footer>
     </div>
 
-    <!-- Скрипты -->
     <script src="app.js"></script>
     <script>
         // Функция сброса профиля
