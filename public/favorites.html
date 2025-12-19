@@ -56,7 +56,6 @@
             border: 2px dashed #cbd5e1;
         }
         
-        /* Модальное окно */
         .modal {
             display: none;
             position: fixed;
@@ -86,7 +85,6 @@
             to { transform: translateY(0); opacity: 1; }
         }
         
-        /* Уведомления */
         .notification {
             position: fixed;
             top: 1.5rem;
@@ -114,7 +112,6 @@
             border-left-color: #667eea;
         }
         
-        /* Анимации */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -146,7 +143,6 @@
             <p class="text-gray-600">Сохранённые вами туристические направления</p>
         </header>
 
-        <!-- Контент -->
         <div class="mb-8">
             <!-- Состояния -->
             <div id="loading-state" class="text-center py-12">
@@ -168,7 +164,6 @@
                 </div>
             </div>
             
-            <!-- Список избранного -->
             <div id="favorites-content" class="hidden">
                 <div class="flex items-center justify-between mb-6">
                     <div>
@@ -187,12 +182,10 @@
                     </div>
                 </div>
                 
-                <!-- Сетка направлений -->
                 <div id="favorites-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Направления загрузятся через JS -->
                 </div>
                 
-                <!-- Статистика -->
                 <div class="mt-8 bg-white rounded-2xl shadow-soft p-6">
                     <h3 class="font-semibold text-gray-800 mb-4 flex items-center space-x-2">
                         <i class="fas fa-chart-pie text-blue-500"></i>
@@ -216,7 +209,6 @@
             </div>
         </div>
 
-        <!-- Навигация -->
         <div class="flex justify-center space-x-4">
             <a href="index.html" class="px-6 py-3 bg-white rounded-xl shadow-soft text-gray-700 font-medium hover:shadow-md transition-all flex items-center space-x-2">
                 <i class="fas fa-robot"></i>
@@ -228,13 +220,11 @@
             </a>
         </div>
 
-        <!-- Footer -->
         <footer class="pt-6 mt-8 border-t border-gray-200 text-center">
-            <p class="text-gray-500 text-sm">TravelMind • Управление избранным • Лабораторная работа №8</p>
+            <p class="text-gray-500 text-sm">TravelMind • Управление избранным </p>
         </footer>
     </div>
 
-    <!-- Модальное окно -->
     <div id="details-modal" class="modal">
         <div class="modal-content">
             <div class="p-6">
@@ -251,7 +241,6 @@
         </div>
     </div>
 
-    <!-- Скрипты -->
     <script src="favorites.js"></script>
     <script>
         // Функции для модального окна
@@ -282,7 +271,6 @@
             }, 3000);
         };
         
-        // Закрытие модального окна при клике вне его
         document.getElementById('details-modal').onclick = function(e) {
             if (e.target === this) closeModal();
         };
