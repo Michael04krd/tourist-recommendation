@@ -1,4 +1,3 @@
-// DOM элементы
 const loadingState = document.getElementById('loading-state');
 const emptyState = document.getElementById('empty-state');
 const favoritesContent = document.getElementById('favorites-content');
@@ -8,7 +7,6 @@ const countriesCount = document.getElementById('countries-count');
 const climatesCount = document.getElementById('climates-count');
 const budgetsCount = document.getElementById('budgets-count');
 
-// Загрузить избранное
 async function loadFavorites() {
     try {
         const favoriteIds = JSON.parse(localStorage.getItem('favorites') || '[]');
@@ -42,7 +40,6 @@ async function loadFavorites() {
     }
 }
 
-// Показать избранное
 function displayFavorites(destinations) {
     favoritesCount.textContent = destinations.length;
     
@@ -185,7 +182,6 @@ function getTravelTypeText(type) {
     return map[type] || type;
 }
 
-// Уведомление
 function showNotification(message) {
     const notification = document.createElement('div');
     notification.className = 'fixed top-6 right-6 z-50 max-w-sm rounded-lg shadow-lg border-l-4 border-blue-500 p-4 bg-white';
