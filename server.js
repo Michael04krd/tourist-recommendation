@@ -5,18 +5,17 @@ const fs = require('fs').promises;
 const app = express();
 const PORT = 3000;
 
-// Middleware
 app.use(express.json());
 app.use(express.static('public'));
 
-// CORS для разработки
+// CORS
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     next();
 });
 
-// API: все направления
+// Все направления
 app.get('/api/destinations', async (req, res) => {
     try {
         const data = await fs.readFile('destinations.json', 'utf8');
@@ -56,7 +55,7 @@ app.post('/api/recommendations', async (req, res) => {
                 // Простая логика: если есть хоть какие-то интересы, даём базовые баллы
                 score += 10;
                 
-                // Дополнительные баллы за культурные интересы для культурных направлений
+                // Баллы за культурные интересы
                 if (userProfile.interests.includes('history') && destination.travelTypes.includes('culture')) {
                     score += 10;
                 }
