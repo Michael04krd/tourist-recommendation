@@ -1,4 +1,3 @@
-// DOM элементы
 const profileDetails = document.getElementById('profile-details');
 const recommendationsList = document.getElementById('recommendations-list');
 let relevanceChart = null;
@@ -148,7 +147,6 @@ function displayRecommendations(recommendations) {
     `).join('');
 }
 
-// Вспомогательные функции
 function getClimateText(climate) {
     const map = { hot: 'Жаркий', moderate: 'Умеренный', cold: 'Холодный' };
     return map[climate] || climate;
@@ -164,7 +162,6 @@ function getTravelTypeText(type) {
     return map[type] || type;
 }
 
-// График
 function createChart(recommendations) {
     const ctx = document.getElementById('relevanceChart')?.getContext('2d');
     if (!ctx) return;
@@ -198,7 +195,6 @@ function createChart(recommendations) {
     });
 }
 
-// Добавить в избранное
 function addToFavorites(destinationId) {
     try {
         const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
@@ -212,12 +208,10 @@ function addToFavorites(destinationId) {
     }
 }
 
-// Показать детали
 function showDetails(destinationId) {
     alert('Детальная информация (в разработке)');
 }
 
-// Очистить профиль
 function clearProfile() {
     if (confirm('Очистить профиль?')) {
         localStorage.removeItem('userProfile');
